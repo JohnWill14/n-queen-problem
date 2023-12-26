@@ -5,7 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../NQueenProblem.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/src/main/java/br/com/uem/informatica/ia/model/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/src/main/java/br/com/uem/informatica/ia/model/BoardNQueenProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/src/main/java/br/com/uem/informatica/ia/solver/SolverNQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Minimum Conflicts/NQueenMinimumConflicts/src/main/java/br/com/uem/informatica/ia/util/IOUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/model/Board.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/model/BoardNQueenProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/solver/SolverNQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../backtracking (copy)/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/util/IOUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,25 +83,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor": "Run",
-    "Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/johnwill14/Desktop/n-queen-problem/backtracking/NQueen-Constraint_Satisfaction",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/johnwill14/Desktop/n-queen-problem/SRP/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/johnwill14/Desktop/n-queen-problem/backtracking/NQueen-Constraint_Satisfaction&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/johnwill14/Desktop/n-queen-problem/SRP/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.uem.informatica.ia.Main" />
@@ -128,7 +153,11 @@
       <option name="presentableId" value="Default" />
       <updated>1703521761768</updated>
       <workItem from="1703521762769" duration="2784000" />
-      <workItem from="1703536057198" duration="742000" />
+      <workItem from="1703536057198" duration="1364000" />
+      <workItem from="1703541071905" duration="77000" />
+      <workItem from="1703541414807" duration="66000" />
+      <workItem from="1703541937031" duration="13000" />
+      <workItem from="1703556111047" duration="27000" />
     </task>
     <servers />
   </component>
