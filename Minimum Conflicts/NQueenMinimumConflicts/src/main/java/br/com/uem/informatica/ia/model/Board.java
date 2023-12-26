@@ -1,7 +1,14 @@
-package br.com.uem.nformatica.ia.model;
+package br.com.uem.informatica.ia.model;
+
+import org.apache.commons.lang3.tuple.ImmutablePair;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Board {
-    private byte matriz[][];
+    private byte[][] matriz;
     private int length;
 
     public Board(int length) {
@@ -18,12 +25,16 @@ public class Board {
     }
 
     public byte get(int row, int col){
-        return matriz[row][col];
+       return matriz[row] [col];
     }
 
     public boolean update(byte value, int row, int col){
-        matriz[row][col] = value;
+        matriz[row] [col] =  value;
         return true;
+    }
+
+    public void remove( int row, int col){
+        matriz[row] [col] =  0;
     }
 
 }

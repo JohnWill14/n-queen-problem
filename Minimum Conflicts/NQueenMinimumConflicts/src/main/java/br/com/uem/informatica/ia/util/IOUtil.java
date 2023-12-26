@@ -1,4 +1,4 @@
-package br.com.uem.nformatica.ia.util;
+package br.com.uem.informatica.ia.util;
 
 import br.com.uem.informatica.ia.model.Board;
 
