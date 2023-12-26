@@ -14,9 +14,9 @@ public class Main {
 
         SolverNQ solverNQ = new SolverNQ(n);
 
-        solverNQ.solveNQ();
+        for(int i=0;i<5 && !solverNQ.isSolve();i++ )
+             solverNQ.solveNQ();
 
-        System.out.println("after");
         solverNQ.printBoard();
     }
 

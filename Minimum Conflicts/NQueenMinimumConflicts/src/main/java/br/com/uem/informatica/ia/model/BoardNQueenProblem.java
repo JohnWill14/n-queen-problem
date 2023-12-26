@@ -6,18 +6,16 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 public class BoardNQueenProblem extends Board{
 
     private int[] queens;
 
-    private Set<Integer> tabu;
-
     public BoardNQueenProblem(int length) {
         super(length);
         queens = new int[length];
-        tabu = new HashSet<>();
     }
 
     public int getColQueen(int col){
@@ -25,33 +23,11 @@ public class BoardNQueenProblem extends Board{
     }
 
     public int getColMonimalConflicts(){
-        int minor = 0;
-        int col = 0;
-        boolean first = true;
-
-        if(tabu.size() == getLength()-1){
-            tabu.clear();
-        }
-
-        int conflicts = 0;
-        for(int i=0;i<getLength();i++){
-            conflicts = contConflicts(getColQueen(i), i);
-
-            if(conflicts == 0){
-                continue;
-            }
-
-            if((minor <= conflicts  || first) && !tabu.contains(i)){
-                minor = conflicts;
-                col = i;
-                first = false;
-            }
-        }
-        tabu.add(col);
-
-        if(first){
-            tabu.clear();
-        }
+        int col, conflito;
+        do {
+            col = ThreadLocalRandom.current().nextInt(getLength());
+            conflito = contConflicts(getColQueen(col), col);
+        }while (conflito == 0);
 
         return col;
     }

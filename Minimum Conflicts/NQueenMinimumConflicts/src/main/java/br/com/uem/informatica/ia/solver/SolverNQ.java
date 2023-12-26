@@ -26,40 +26,48 @@ public class SolverNQ {
     }
 
     private  void solve(){
-        System.out.println("before");
-        printBoard();;
         int length = boardNQueenProblem.getLength();
 
         int count = 0;
-        while(boardNQueenProblem.thereIsQueenConflict() && count<1000){
+        while(boardNQueenProblem.thereIsQueenConflict() && count<10000){
                 count++;
                 int col = boardNQueenProblem.getColMonimalConflicts();
-                System.out.println(col);
+                int rowOld = boardNQueenProblem.getColQueen(col);
 
-                int minimo = 0, pos=-1;
+                int minimo = Integer.MAX_VALUE, pos=-1;
                 for(int row = 0; row< length; row++){
+                    if(rowOld == row){
+                        continue;
+                    }
                     int conflicts = boardNQueenProblem.contConflicts(row, col);
 
-                    if(conflicts<=minimo || pos<0){
+                    if(conflicts<minimo){
                         minimo = conflicts;
                         pos = row;
                     }
                 }
-                int rowOld = boardNQueenProblem.getColQueen(col);
 
-                if(rowOld != pos){
-                    boardNQueenProblem.removeQueen(col);
-                    boardNQueenProblem.addQueen(pos, col);
-                }
+                boardNQueenProblem.removeQueen(col);
+                boardNQueenProblem.addQueen(pos, col);
 
         }
-        System.out.println(count);
+        System.out.println(count+" iterations");
 
     }
 
 
 
     public void printBoard(){
-        IOUtil.printSolutionJSON(this.boardNQueenProblem);
+        if(boardNQueenProblem.thereIsQueenConflict()){
+            System.out.println("Incomplete solution: try more iterations");
+        }else{
+
+            System.out.println("Complete solution");
+        }
+        IOUtil.printSolutionTextAndJson(this.boardNQueenProblem);
+    }
+
+    public boolean isSolve(){
+        return !boardNQueenProblem.thereIsQueenConflict();
     }
 }
