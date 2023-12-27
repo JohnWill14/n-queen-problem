@@ -26,22 +26,10 @@ public class BoardNQueenProblem extends Board{
         int col, conflito;
         do {
             col = ThreadLocalRandom.current().nextInt(getLength());
-            conflito = contConflicts(getColQueen(col), col);
+            conflito = this.get(getColQueen(col), col);
         }while (conflito == 0);
 
         return col;
-    }
-
-    public List<Integer> getColQueen(){
-        return Arrays.stream(queens)
-                .boxed()
-                .collect(Collectors.toList());
-    }
-
-    public void removeQueen(int col) {
-        int row = queens[col];
-        super.remove(row, col);
-        queens[col] = 0;
     }
 
     public boolean thereIsQueenConflict(){
@@ -54,69 +42,76 @@ public class BoardNQueenProblem extends Board{
     }
 
     public boolean thereIsQueenConflict(int i){
-        return this.contConflicts(this.getColQueen(i), i) != 0;
+        return this.get(this.getColQueen(i), i) > 0;
     }
 
-    public boolean addQueen(int row, int col) {
-        if(update((byte) 1, row, col)){
-            queens[col] = row;
-            return true;
-        }
+    public boolean moveQueen( int row, int col){
 
-        return false;
+        this.queens[col] = row;
+        addConstraint(row, col);
+
+        return true;
     }
 
     public boolean isQueen(int row, int col){
-        return this.get(row, col) == 1;
+        return this.getColQueen(col) == row;
     }
 
-    public int contConflicts(int row, int col){
-        return checkRow(row) + checkDiagonal(row, col);
+    public boolean removeQueen( int col){
+        int oldRow = this.queens[col];
+
+        this.queens[col] = 0;
+        removeConstraint(oldRow, col);
+
+        return true;
     }
 
-    private int checkRow(int row){
-        int cont = 0;
-        // verifica se já existe uma rainha na linha
+    public void addConstraint(int row, int col){
+        setValuesRow(row, col, (byte) 1);
+        setValuesColumn(row, col, (byte) 1);
+        setValuesDiagonal(row, col, (byte) 1);
+    }
+
+    public void removeConstraint(int row, int col){
+        setValuesRow(row, col, (byte) -1);
+        setValuesColumn(row, col, (byte) -1);
+        setValuesDiagonal(row, col, (byte) -1);
+    }
+
+    private void setValuesRow(int row, int col, byte value){
         for (int i = 0; i < getLength(); i++){
-            if (this.isQueen(row, i)){
-               cont +=1;
-            }
+            if(i==col)
+                continue;
+            allocateConstraint(value, row, i);
         }
-
-        return cont -1;
     }
 
-    private int checkDiagonal(int row, int col){
-        int cont = 0;
-        // verifica se já existe uma rainha na diagonal principal
-        for (int i = row-1, j = col-1; i >= 0 && j >= 0; i--, j--){
-            if ( this.isQueen(i,j)){
-                cont+=1;
-            }
+    private void setValuesColumn(int row, int col, byte value){
+        for (int i = 0; i < getLength(); i++){
+            if(i==row )
+                continue;
+            allocateConstraint(value, i, col);
         }
+    }
 
+    private void setValuesDiagonal(int row, int col, byte value){
+        int cont = 0;
+
+        for (int i = row-1, j = col-1; i >= 0 && j >= 0; i--, j--){
+                allocateConstraint(value, i, j);
+        }
 
         for (int i = row+1, j = col+1; i < getLength() && j < getLength(); i++, j++){
-            if ( this.isQueen(i,j)){
-                cont++;
-            }
+                allocateConstraint(value, i, j);
         }
 
-        // verifica se já existe uma rainha na diagonal secundaria
         for (int i = row+1, j = col-1; j >= 0 && i < this.getLength(); i++, j--){
-            if (this.isQueen(i, j)){
-                cont++;
-            }
+                allocateConstraint(value, i, j);
         }
 
         for (int i = row-1, j = col+1; j < this.getLength() && i >= 0; i--, j++){
-            if (this.isQueen(i, j)){
-                cont++;
-            }
+                allocateConstraint(value, i, j);
         }
-
-        return cont;
     }
-
 
 }

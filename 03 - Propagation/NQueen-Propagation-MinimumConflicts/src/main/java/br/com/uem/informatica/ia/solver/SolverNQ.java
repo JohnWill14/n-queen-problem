@@ -16,8 +16,8 @@ public class SolverNQ {
     private void generateValues(){
         int length = boardNQueenProblem.getLength();
         for(int i = 0; i< length; i++){
-            int col = ThreadLocalRandom.current().nextInt(length);
-            boardNQueenProblem.addQueen(col,i);
+            int row = ThreadLocalRandom.current().nextInt(length);
+            boardNQueenProblem.moveQueen(row, i);
         }
     }
 
@@ -39,16 +39,15 @@ public class SolverNQ {
                     if(rowOld == row){
                         continue;
                     }
-                    int conflicts = boardNQueenProblem.contConflicts(row, col);
+                    int conflicts = boardNQueenProblem.get(row, col);
 
                     if(conflicts<minimo){
                         minimo = conflicts;
                         pos = row;
                     }
                 }
-
                 boardNQueenProblem.removeQueen(col);
-                boardNQueenProblem.addQueen(pos, col);
+                boardNQueenProblem.moveQueen(pos, col);
 
         }
         System.out.println(count+" iterations");
@@ -63,6 +62,10 @@ public class SolverNQ {
         }else{
 
             System.out.println("Complete solution");
+            for(int i=0;i<boardNQueenProblem.getLength();i++)
+                System.out.print(boardNQueenProblem.getColQueen(i)+" ");
+
+            System.out.println();
         }
         IOUtil.printSolutionTextAndJson(this.boardNQueenProblem);
     }

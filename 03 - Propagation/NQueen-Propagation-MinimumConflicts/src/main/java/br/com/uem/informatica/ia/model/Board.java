@@ -28,13 +28,9 @@ public class Board {
        return matriz[row] [col];
     }
 
-    public boolean update(byte value, int row, int col){
-        matriz[row] [col] =  value;
+    public boolean allocateConstraint(byte value, int row, int col){
+        matriz[row][col] += value;
         return true;
-    }
-
-    public void remove( int row, int col){
-        matriz[row] [col] =  0;
     }
 
 }
