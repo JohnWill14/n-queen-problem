@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="" />
+    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,28 +58,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "Gradle.Build NQueen-Propagation.executor": "Run",
-    "Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor": "Run",
-    "Gradle.NQueen-Propagation [:Main.main()].executor": "Run",
-    "Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/johnwill14/Desktop/n-queen-problem/propagation/NQueen-Propagation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/johnwill14/Desktop/n-queen-problem/SRP/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build NQueen-Propagation.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.NQueen-Propagation [:Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/johnwill14/Desktop/n-queen-problem/propagation/NQueen-Propagation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/johnwill14/Desktop/n-queen-problem/SRP/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-17-openjdk" />
@@ -137,7 +139,8 @@
       <workItem from="1703541937031" duration="13000" />
       <workItem from="1703556111047" duration="27000" />
       <workItem from="1703558495625" duration="30000" />
-      <workItem from="1703671096635" duration="2707000" />
+      <workItem from="1703671096635" duration="3334000" />
+      <workItem from="1703674596523" duration="8000" />
     </task>
     <servers />
   </component>
@@ -146,16 +149,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/solver/SolverNQ.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
