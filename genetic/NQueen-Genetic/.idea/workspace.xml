@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/src/main/java/br/com/uem/informatica/ia/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/src/main/java/br/com/uem/informatica/ia/model/Board.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/src/main/java/br/com/uem/informatica/ia/model/BoardNQueenProblem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/src/main/java/br/com/uem/informatica/ia/solver/SolverNQ.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../03 - Propagation/NQueen-Propagation/src/main/java/br/com/uem/informatica/ia/util/IOUtil.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -158,6 +140,7 @@
       <workItem from="1703671096635" duration="3334000" />
       <workItem from="1703674614579" duration="233000" />
       <workItem from="1703678655480" duration="3000" />
+      <workItem from="1703703280325" duration="154000" />
     </task>
     <servers />
   </component>

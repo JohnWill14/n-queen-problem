@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../propagation/NQueen-Propagation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../propagation/NQueen-Propagation/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/population/chromosome/Chromosome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/population/chromosome/Population.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/model/Board.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/model/BoardNQueenProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/solver/SolverNQ.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/util/IOUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../genetic/NQueen-Genetic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../genetic/NQueen-Genetic/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,30 +70,38 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.Main.executor": "Run",
+    "Gradle.Build NQueen-Genetic.executor": "Run",
     "Gradle.Build NQueen-Propagation.executor": "Run",
     "Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor": "Run",
+    "Gradle.NQueen-Genetic [:Main.main()].executor": "Run",
     "Gradle.NQueen-Propagation [:Main.main()].executor": "Run",
     "Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/johnwill14/Desktop/n-queen-problem/genetic/NQueen-Genetic",
+    "last_opened_file_path": "/home/johnwill14/Desktop/n-queen-problem/04 - Genetic/NQueen-Genetic/src/main/java/br/com/uem/informatica/ia",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/home/johnwill14/Desktop/n-queen-problem/SRP/NQueen-Constraint_Satisfaction/src/main/java/br/com/uem/informatica/ia/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/java-17-openjdk" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="br.com.uem.informatica.ia.Main" />
-      <module name="NQueen-Propagation.main" />
+      <module name="NQueen-Genetic.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.com.uem.informatica.ia.*" />
@@ -141,6 +157,7 @@
       <workItem from="1703558495625" duration="30000" />
       <workItem from="1703671096635" duration="3334000" />
       <workItem from="1703674614579" duration="6000" />
+      <workItem from="1703703443375" duration="14707000" />
     </task>
     <servers />
   </component>

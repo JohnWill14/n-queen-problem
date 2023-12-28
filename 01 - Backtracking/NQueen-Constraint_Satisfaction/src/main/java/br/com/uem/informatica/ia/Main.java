@@ -15,7 +15,9 @@ public class Main {
 
         SolverNQ solverNQ = new SolverNQ(n);
 
+        long start = System.currentTimeMillis();
         solverNQ.solveNQ();
+        System.out.println("Tempo decorrido: "+(System.currentTimeMillis()-start)+" ms");
         solverNQ.printBoard();
 
     }

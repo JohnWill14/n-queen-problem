@@ -7,7 +7,7 @@ public class BoardNQueenProblem extends Board{
 
     @Override
     public boolean update(byte value, int row, int col) {
-        if(!isSafe(row, col)){
+        if(value>0&&!isSafe(row, col)){
             return false;
         }
 
@@ -61,6 +61,4 @@ public class BoardNQueenProblem extends Board{
 
         return true;
     }
-
-
 }

@@ -62,8 +62,6 @@ public class SolverNQ {
         }else{
 
             System.out.println("Complete solution");
-            for(int i=0;i<boardNQueenProblem.getLength();i++)
-                System.out.print(boardNQueenProblem.getColQueen(i)+" ");
 
             System.out.println();
         }

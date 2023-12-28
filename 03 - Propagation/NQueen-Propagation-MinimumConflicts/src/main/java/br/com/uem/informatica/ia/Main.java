@@ -14,8 +14,14 @@ public class Main {
 
         SolverNQ solverNQ = new SolverNQ(n);
 
-        for(int i=0;i<5 && !solverNQ.isSolve();i++ )
-             solverNQ.solveNQ();
+        long start = 0, stop = 0;
+        for(int i=0;i<5 && !solverNQ.isSolve();i++ ){
+            start=System.currentTimeMillis();
+            solverNQ.solveNQ();
+            stop = System.currentTimeMillis();
+        }
+
+        System.out.println("tempo decorrido "+(stop-start)+" ms");
 
         solverNQ.printBoard();
     }

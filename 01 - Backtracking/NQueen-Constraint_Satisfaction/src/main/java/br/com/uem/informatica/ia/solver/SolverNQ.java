@@ -11,7 +11,6 @@ public class SolverNQ {
     }
 
     public boolean solveNQ(){
-
         if (!solve(0)) {
             System.out.print("Solution does not exist");
             return false;
@@ -40,6 +39,6 @@ public class SolverNQ {
     }
 
     public void printBoard(){
-        IOUtil.printSolutionJSON(this.boardNQueenProblem);
+        IOUtil.printSolutionTextAndJson(this.boardNQueenProblem);
     }
 }
