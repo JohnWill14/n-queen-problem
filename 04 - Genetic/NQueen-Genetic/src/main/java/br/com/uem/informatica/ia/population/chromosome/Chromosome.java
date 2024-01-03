@@ -8,6 +8,7 @@ public class Chromosome implements Comparable<Chromosome>{
 
     public Chromosome(int n){
         queens = new int[n];
+        fitnessValue = null;
     }
 
     public int getQueen(int col){
@@ -41,7 +42,7 @@ public class Chromosome implements Comparable<Chromosome>{
             int cont = 0;
 
             for(int i=0;i<getLength();i++){
-                cont = countConflictRow(queens[i], i) + countConflictDiagonal(queens[i], i);
+                cont += countConflictRow(queens[i], i) + countConflictDiagonal(queens[i], i);
             }
 
             fitnessValue = cont;
@@ -54,11 +55,8 @@ public class Chromosome implements Comparable<Chromosome>{
         int cont = 0;
 
         for (int i = 0; i < getLength(); i++){
-            if(i==col)
-                continue;
-
-
-            cont ++;
+            if(i!=col && row == getQueen(i))
+                cont ++;
         }
 
         return cont;

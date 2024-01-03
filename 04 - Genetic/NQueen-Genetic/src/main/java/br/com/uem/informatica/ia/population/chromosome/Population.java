@@ -18,6 +18,10 @@ public class Population {
         generationNumberGeneration = 0;
     }
 
+    public Chromosome getSolver() {
+        return solver;
+    }
+
     public double getAverage(){
         return average;
     }
@@ -51,7 +55,7 @@ public class Population {
 
         average = average/(chromosomes.size()*1.0);
 
-        Chromosome first = chromosomes.get(0);
+        Chromosome first = getBestIndividual();
 
         if(first.fitness() == 0){
             solver = first;
@@ -63,19 +67,13 @@ public class Population {
         return solver != null;
     }
 
-
     public void crossover(){
         // selection
-        int numberOfSelected = (int) (chromosomes.size()*0.2d);
+        int numberOfSelected = (int) (chromosomes.size()*0.6d);
 
         List<Chromosome> selecteds = new ArrayList<>();
 
         for(int i=0;i<numberOfSelected;i++){
-            selecteds.add(chromosomes.get(i));
-        }
-        int badSelecteds = (int) (chromosomes.size() * 0.05d);
-
-        for(int i = chromosomes.size() - badSelecteds, j = 0; j< badSelecteds; i--,j++){
             selecteds.add(chromosomes.get(i));
         }
 
@@ -89,7 +87,6 @@ public class Population {
         }
 
         // crossover
-
         int positionInArray = 0;
 
         while(crossovers.size()-positionInArray>1){
@@ -114,37 +111,20 @@ public class Population {
             }
 
 
-            applyMinimalConflicts(f1);
             chromosomes.add(f1);
 
-            applyMinimalConflicts(f2);
             chromosomes.add(f2);
 
-            if(ThreadLocalRandom.current().nextInt(100)<=30){
+            if(ThreadLocalRandom.current().nextInt(100)<=6){
                 Chromosome f3 = f1.clone();
                 Chromosome f4 = f2.clone();
 
-                int col = ThreadLocalRandom.current().nextInt(f3.getLength());
-                int row = ThreadLocalRandom.current().nextInt(f3.getLength());
-
-                int minor = Math.min(col, row);
-                int max = Math.max(col, row);
-                int[] queens = f3.getQueens();
-                for(int i=max,j=minor;i>minor;i--,j++)
-                    f3.moveQueen(queens[i], j);
-
                 applyMinimalConflicts(f3);
+
                 chromosomes.add(f3);
 
-                 col = ThreadLocalRandom.current().nextInt(f3.getLength());
-                 row = ThreadLocalRandom.current().nextInt(f3.getLength());
-                 minor = Math.min(col, row);
-                 max = Math.max(col, row);
-                 queens = f4.getQueens();
-                for(int i=max,j=minor;i>minor;i--,j++)
-                    f4.moveQueen(queens[i], j);
-
                 applyMinimalConflicts(f4);
+
                 chromosomes.add(f4);
             }
         }
@@ -210,5 +190,9 @@ public class Population {
         for(Chromosome c:chromosomes){
             System.out.println(c);
         }
+    }
+
+    public Chromosome getBestIndividual(){
+        return chromosomes.get(0);
     }
 }

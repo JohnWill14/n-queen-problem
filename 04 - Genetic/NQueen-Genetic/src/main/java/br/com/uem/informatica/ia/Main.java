@@ -2,6 +2,7 @@ package br.com.uem.informatica.ia;
 
 import br.com.uem.informatica.ia.population.chromosome.Chromosome;
 import br.com.uem.informatica.ia.population.chromosome.Population;
+import br.com.uem.informatica.ia.util.IOUtil;
 
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
@@ -15,17 +16,18 @@ public class Main {
 
         int n = sc.nextInt();
 
-        int limitPopulation = 60;
+        int limitPopulation = 100;
 
         Population population = new Population();
 
         population.initPopulation(n, 20);
 
         int contBreak = 0;
+        double history = 0;
 
-        while(population.getNumberGeneration()<10000 && !population.foundTheSolution()){
-            System.out.println("num: "+population.getNumberGeneration()+" fitness: "+String.format("%.2f",population.getAverage()));
+        while(contBreak<1000 && !population.foundTheSolution()){
             population.calculateFitnessForPopulation();
+            System.out.println("geracao nº: "+population.getNumberGeneration()+" fitness: "+String.format("%.2f",population.getAverage())+" best individual "+population.getBestIndividual());
 
             if(population.foundTheSolution()){
                 break;
@@ -35,17 +37,28 @@ public class Main {
                 population.applyMortalityRate(limitPopulation);
             }
 
+            if(contBreak == 0 || population.getAverage() == history){
+                contBreak++;
+                history= population.getAverage();
+            }else{
+                contBreak = 0;
+            }
+
             population.crossover();
         }
 
 
-        population.showAllPopulation();
         if(population.foundTheSolution()){
             System.out.println("Solucao encontrada !!!");
+            IOUtil.printSolutionTextAndJson(population.getSolver());
         }else{
             System.out.println("Não foi encontrada a solucao :(");
         }
 
+//        Chromosome c = new Chromosome(n);
+//        c.setQueens(new int[]{1,3,0,2});
+//        IOUtil.printSolutionTextAndJson(c);
+//        System.out.println(c.fitness());
     }
 
 }
