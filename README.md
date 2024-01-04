@@ -23,7 +23,7 @@ Algorithms that solve the n queens:
   
   <img src="images/terminal.gif"  length="200px" />
   
-## Soluções encontradas
+## Analisar soluções encontradas
 
   Na pasta ```board-htm``` ao acessar o arquivo index.html é possível submeter uma solução do problema, no formato de json, e dessa maneira gerar uma melhor visualização das posições das rainhas:
 
