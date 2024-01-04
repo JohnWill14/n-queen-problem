@@ -1,4 +1,6 @@
-# N Queen Problem
+     
+
+# <img src="images/wQ.png"  height="50" width="50" />       N-Queen Problem
 
 Algorithms that solve the n queens:
  * Backtracking
