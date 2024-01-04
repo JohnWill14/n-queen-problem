@@ -25,6 +25,8 @@ public class Main {
         int contBreak = 0;
         double history = 0;
 
+        long start = System.currentTimeMillis();
+
         while(contBreak<1000 && !population.foundTheSolution()){
             population.calculateFitnessForPopulation();
             System.out.println("geracao nº: "+population.getNumberGeneration()+" fitness: "+String.format("%.2f",population.getAverage())+" best individual "+population.getBestIndividual());
@@ -48,17 +50,17 @@ public class Main {
         }
 
 
+        long end = System.currentTimeMillis();
+
+        System.out.println("Tempo decorrido: "+(end-start)+" ms");
+
+
         if(population.foundTheSolution()){
             System.out.println("Solucao encontrada !!!");
             IOUtil.printSolutionTextAndJson(population.getSolver());
         }else{
             System.out.println("Não foi encontrada a solucao :(");
         }
-
-//        Chromosome c = new Chromosome(n);
-//        c.setQueens(new int[]{1,3,0,2});
-//        IOUtil.printSolutionTextAndJson(c);
-//        System.out.println(c.fitness());
     }
 
 }
