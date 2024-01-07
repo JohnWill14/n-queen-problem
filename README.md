@@ -55,6 +55,11 @@ Nessa teoria, dentro de uma população de indivíduos há uma disputa de recurs
   ./gradlew run --console=plain
   ```
 
+  ```bash
+  gradlew.bat run --console=plain
+  ```
+
+
   Insira o valor n contendo o número para o problema do n rainhas:
 
 
