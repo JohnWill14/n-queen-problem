@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="" />
+    <list default="true" id="ebcd4fab-6f5f-4936-97e6-c6079ca63b66" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/saida.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/exporter/DataGeneration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/exporter/ExporterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/exporter/ExporterPopulationCsvHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/uem/informatica/ia/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +72,8 @@
     "Gradle.Build NQueen-Propagation.executor": "Run",
     "Gradle.NQueen-Constraint_Satisfaction [:Main.main()].executor": "Run",
     "Gradle.NQueen-Genetic [:Main.main()].executor": "Run",
+    "Gradle.NQueen-Genetic [dependencies].executor": "Run",
+    "Gradle.NQueen-Genetic [test].executor": "Run",
     "Gradle.NQueen-Propagation [:Main.main()].executor": "Run",
     "Gradle.Tests in 'NQueen-Constraint_Satisfaction'.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -102,6 +112,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NQueen-Genetic [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="NQueen-Genetic [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Tests in 'NQueen-Constraint_Satisfaction'" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -126,6 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NQueen-Genetic [test]" />
+        <item itemvalue="Gradle.NQueen-Genetic [dependencies]" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -150,6 +206,8 @@
       <workItem from="1703703443375" duration="14707000" />
       <workItem from="1704055493654" duration="1775000" />
       <workItem from="1704320293478" duration="7627000" />
+      <workItem from="1704594445618" duration="3000" />
+      <workItem from="1704627412406" duration="3682000" />
     </task>
     <servers />
   </component>
