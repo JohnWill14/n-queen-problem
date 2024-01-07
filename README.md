@@ -253,7 +253,7 @@ Essa seção traz um resumo dos casos de testes que foram utilizados para cada u
 
 <img src="images/nao-aleatorio.png"  width="700px" />
 
-<br/>
+
 <br/>
 
 <p>
@@ -261,10 +261,6 @@ Essa seção traz um resumo dos casos de testes que foram utilizados para cada u
 
 </p>
 
-
-<br/>
-<br/>
-<br/>
 <br/>
 <br/>
 
