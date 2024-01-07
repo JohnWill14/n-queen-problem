@@ -47,15 +47,13 @@ Essa seção traz um resumo dos casos de testes que foram utilizados para cada u
 <table>
 <tbody>
 <tr>
-<td>Input(N)</td>
+<td rowspan="2">Input(N)</td>
 <td colspan="5">
 <p><span style="font-weight: 400;">Tempo em milissegundos</span></p>
 </td>
 </tr>
 <tr>
-<td>
-<p><span style="font-weight: 400;"></span></p>
-</td>
+
 <td>
 <p><span style="font-weight: 400;">backtracking</span></p>
 </td>
@@ -215,6 +213,11 @@ Essa seção traz um resumo dos casos de testes que foram utilizados para cada u
 </tr>
 </tbody>
 </table>
+
+<img src="images/aleatorio.png"  width="700px" />
+
+<img src="images/nao-aleatorio.png"  width="700px" />
+
 
 <br/>
 <br/>
