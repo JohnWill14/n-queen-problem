@@ -218,6 +218,11 @@ Essa seção traz um resumo dos casos de testes que foram utilizados para cada u
 
 <img src="images/nao-aleatorio.png"  width="700px" />
 
+<p>
+  Após os experimentos feitos, conseguimos avaliar o desempenho e analisar os resultados retornados. Com base nas informações expostas, notamos as limitações de cada algoritmo utilizado. Algoritmos como Backtracking por ter  que percorrer de forma sistemática muitas soluções acabou por ter um tempo de execução muito maior do que se comparado com heurísticas e o algoritmo genético. Já o algoritmo genético se mostrou interessante resolvendo casos menores com rapidez e podendo resolver casos maiores dadas as condições. O uso da heurística de conflitos mínimos se mostrou eficiente na resolução de problemas de N-rainhas, com o uso de técnicas de propagação é possível melhorar seu desempenho, porém o algoritmo apresenta problemas com valores de N muito grande, devido ao processo de sorteio de números aleatórios. 
+
+</p>
+
 
 <br/>
 <br/>
