@@ -2,13 +2,13 @@
 
 # <img src="images/wQ.png"  height="50" width="50" />       N-Queen Problem
 
-Algoritimos implementados:
+Algoritmos implementados:
  * *Backtracking*
  * *Minimum Conflicts*
  * *Propagation*
  * *Genetic*
 
-## Algoritimos
+## Algoritmos
 
 ### *Backtracking*
 
